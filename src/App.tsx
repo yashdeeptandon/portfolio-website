@@ -1,9 +1,10 @@
+import { AboutMe } from "./components/about-me/about-me"
 
 function App() {
 
   return (
-    <main className='size-full bg-red'>
-      Hi there! This is a Vite + React app.
+    <main className='size-full font-code'>
+      <AboutMe />
     </main>
   )
 }
