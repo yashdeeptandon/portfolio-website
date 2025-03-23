@@ -1,12 +1,13 @@
-import { AboutMe } from "./components/about-me/about-me"
+import { AboutMe } from "./components/about-me/about-me";
+import Navbar from "./components/layout/navbar";
 
 function App() {
-
   return (
-    <main className='size-full'>
+    <main className="size-full bg-background p-2">
+      <Navbar />
       <AboutMe />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
