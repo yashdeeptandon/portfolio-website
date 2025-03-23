@@ -6,6 +6,7 @@ import helmet from "helmet";
 import compression from "compression";
 import morgan from "morgan";
 import { errorHandler } from "./middleware/errorHandler";
+import authRoutes from "./routes/auth.routes";
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ app.use(express.json());
 app.get("/", (_, res) => {
   res.send("Portfolio API is running with TypeScript!");
 });
+app.use("/api/auth", authRoutes);
 
 app.use(errorHandler);
 
