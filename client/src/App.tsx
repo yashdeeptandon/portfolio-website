@@ -3,7 +3,7 @@ import Navbar from "./components/layout/navbar";
 
 function App() {
   return (
-    <main className="size-full bg-background p-2">
+    <main className="size-full bg-background p-2 text-primary">
       <Navbar />
       <AboutMe />
     </main>
