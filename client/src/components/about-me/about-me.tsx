@@ -7,6 +7,8 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import profileImg from "@/assets/avatar.jpg";
 
 export function AboutMe() {
   const { theme } = useTheme();
@@ -27,11 +29,17 @@ export function AboutMe() {
       </div>
       <div className="mt-2 w-full h-[calc(100vh-4rem-300px)] overflow-auto scroll-smooth">
         <Card className="mx-[300px] leading-8 text-justify">
-          <CardHeader>
-            <CardTitle>Who I Am</CardTitle>
-            <CardDescription>
-              Software Developer | Frontend Developer @GoTrust
-            </CardDescription>
+          <CardHeader className="w-full flex flex-row gap-4 items-center">
+            <Avatar>
+              <AvatarImage src={profileImg} alt="@Me" />
+              <AvatarFallback>YDT</AvatarFallback>
+            </Avatar>
+            <div>
+              <CardTitle>Who I Am</CardTitle>
+              <CardDescription>
+                Software Developer | Frontend Developer @GoTrust
+              </CardDescription>
+            </div>
           </CardHeader>
           <CardContent>
             Yashdeep is a driven software engineer hailing from Noida, India.
