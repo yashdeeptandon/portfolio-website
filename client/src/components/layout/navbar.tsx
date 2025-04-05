@@ -5,8 +5,8 @@ import { Moon, Sun } from "lucide-react";
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <nav className="w-full h-12 flex justify-between">
-      <div className="w-fit-content flex flex-row gap-2">
+    <nav className="w-full h-12 flex justify-between fixed top-0 z-10 px-4 py-2 bg-background/80 backdrop-blur-md rounded-lg shadow-md">
+      <div className="w-fit-content flex flex-row gap-2 items-center">
         <Button variant="link" size="default">
           About
         </Button>
