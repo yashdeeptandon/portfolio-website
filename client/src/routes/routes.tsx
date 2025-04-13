@@ -1,5 +1,3 @@
-import Blogs from "@/components/blogs/blogs";
-import Projects from "@/components/projects/projects";
 import { BrowserRouter, Route, Routes } from "react-router";
 import PublicRoutes from "./public-routes";
 import { AboutMe } from "@/components/about-me/about-me";
