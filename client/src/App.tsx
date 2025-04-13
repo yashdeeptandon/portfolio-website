@@ -5,7 +5,7 @@ import RoutesComponent from "./routes/routes";
 function App() {
   const { theme } = useTheme();
   return (
-    <main className="size-full">
+    <main className="size-full bg-background">
       <Particles
         className="absolute inset-0 z-0"
         quantity={200}

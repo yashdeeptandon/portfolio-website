@@ -3,6 +3,7 @@ import Projects from "@/components/projects/projects";
 import { BrowserRouter, Route, Routes } from "react-router";
 import PublicRoutes from "./public-routes";
 import { AboutMe } from "@/components/about-me/about-me";
+import FeatureInProgressPage from "@/components/common/feature-in-progress";
 
 const RoutesComponent = () => {
   return (
@@ -20,7 +21,8 @@ const RoutesComponent = () => {
           path="blogs"
           element={
             <PublicRoutes>
-              <Blogs />
+              <FeatureInProgressPage />
+              {/* <Blogs /> */}
             </PublicRoutes>
           }
         />
@@ -28,7 +30,8 @@ const RoutesComponent = () => {
           path="projects"
           element={
             <PublicRoutes>
-              <Projects />
+              {/* <Projects /> */}
+              <FeatureInProgressPage />
             </PublicRoutes>
           }
         />

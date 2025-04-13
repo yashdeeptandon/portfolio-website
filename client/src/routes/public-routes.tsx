@@ -6,7 +6,7 @@ interface PublicRoutesProps {
 
 const PublicRoutes: React.FC<PublicRoutesProps> = ({ children }) => {
   return (
-    <main className="size-full bg-background p-2 text-primary flex flex-col gap-2">
+    <main className="size-full p-2 text-primary flex flex-col gap-2">
       <Navbar />
       <section
         className="w-full overflow-auto scroll-smooth mt-14"
