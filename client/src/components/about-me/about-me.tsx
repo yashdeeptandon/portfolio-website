@@ -11,7 +11,7 @@ import Experience from "./experience-vertical";
 
 export function AboutMe() {
   return (
-    <section className="w-full h-[calc(100%-64px)] flex flex-col items-center sm:gap-16 gap-6 mt-16 sm:mt-16">
+    <section className="w-full h-full flex flex-col items-center sm:gap-16 gap-6">
       <div className="w-fit pointer-events-none whitespace-pre-wrap text-center text-4xl sm:text-6xl md:text-8xl font-semibold leading-none">
         Yashdeep Tandon
       </div>

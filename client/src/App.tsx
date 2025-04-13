@@ -1,12 +1,11 @@
-import { AboutMe } from "./components/about-me/about-me";
-import Navbar from "./components/layout/navbar";
 import { Particles } from "./components/magicui/particles";
 import { useTheme } from "./context/theme-context";
+import RoutesComponent from "./routes/routes";
 
 function App() {
   const { theme } = useTheme();
   return (
-    <main className="size-full bg-background p-2 text-primary overflow-auto scroll-smooth flex flex-col gap-2">
+    <main className="size-full">
       <Particles
         className="absolute inset-0 z-0"
         quantity={200}
@@ -14,8 +13,7 @@ function App() {
         color={theme === "light" ? "#000" : "#fff"}
         refresh
       />
-      <Navbar />
-      <AboutMe />
+      <RoutesComponent />
     </main>
   );
 }
